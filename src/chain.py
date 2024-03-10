@@ -13,4 +13,4 @@ class CharactorChain():
         self.chain = chain
 
     def invoke(self, input: str) -> str:
-        self.chain.invoke({"user_input": input})
+        return self.chain.invoke({"input": input})

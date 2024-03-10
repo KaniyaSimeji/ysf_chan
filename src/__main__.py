@@ -4,11 +4,11 @@ from chain import CharactorChain
 
 
 def main():
-    llm = Ollama(model="llama2")
+    llm = Ollama(model="vicuna")
     prompt = CharactorPrompt(
-        system_message="You are a student at a school called Yokohama Science Frontier High School")
+        system_message="あなたは横浜サイエンスフロンィア高校の生徒です")
     chain = CharactorChain(prompt, llm)
-    res = chain.invoke("Are you student?")
+    res = chain.invoke("あなたはサイエンスフロンティア高校の生徒ですか")
     print(res)
 
 

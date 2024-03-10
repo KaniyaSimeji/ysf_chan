@@ -10,5 +10,5 @@ class CharactorPrompt():
         super(CharactorPrompt, self).__init__()
         self.system = ChatPromptTemplate.from_messages([
             SystemMessage(content=system_message),
-            HumanMessage(content="{user_input}")
+            HumanMessage(content="{input}")
         ])
